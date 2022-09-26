@@ -1,4 +1,4 @@
 # 2022-CV
-try something new.
+try to something new.
 This sit is perfect for Mobile Devic. 
     
