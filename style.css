@@ -1,0 +1,227 @@
+* {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   text-decoration: none;
+   color: white;
+}
+
+body {
+   background: linear-gradient(to right top, #a3d3e6, #a0a1a3a8);
+}
+
+.lemon {
+   background-image: linear-gradient(
+      46.39deg,
+      rgba(206, 184, 184, 0.746),
+      #fff 25%,
+      #3e77ff 50%,
+      #e24d9a 25%,
+      rgba(137, 199, 131, 0.178)
+   );
+}
+
+.container {
+   margin: 0 auto;
+   width: 960px;
+   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+}
+
+.container-main {
+   display: grid;
+   grid-template-columns: 1fr 2fr;
+   grid-gap: 1px;
+   margin: 10px 0 10px 0;
+   overflow: hidden;
+}
+
+.left_container {
+   display: grid;
+   position: relative;
+   background: #32353a;
+   width: 400px;
+   backdrop-filter: blur(10px);
+   border-left: 1px solid rgba(255, 255, 255, 0.637);
+   background: linear-gradient(to right top, #b9eff6d0, #fc007aa9);
+   box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.246),
+      inset 4px 4px 16px rgba(0, 0, 0, 0.376);
+}
+
+.right_container {
+   color: black;
+   float: right;
+   margin-left: 20px;
+   border-right: 1px solid rgba(255, 255, 255, 0.637);
+   background: linear-gradient(to right top, #ffe53b86, #00ffff24);
+   box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.246),
+      inset 4px 4px 16px rgba(0, 0, 0, 0.376);
+}
+
+.info {
+   /* border: 1px solid gray; */
+   margin: 0;
+}
+
+.profile {
+   width: 400px;
+   height: 400px;
+   padding: 0;
+}
+
+.name {
+   height: 40px;
+   width: 400px;
+   font-size: 20px;
+   text-align: center;
+   position: absolute;
+   margin-top: -60px;
+   padding-top: 15px;
+   background: linear-gradient(to left top, #00ff5965, #001aff3f);
+   border-bottom: 1px solid rgba(255, 255, 255, 0.52);
+}
+
+.contact {
+}
+
+:is(.contact, .education, .skills, .about, .work_experience, .references) h2 {
+   color: #191a19b0;
+   padding-left: 20px;
+   margin: 7px 0 7px 0;
+   text-transform: uppercase;
+   border-bottom: 2px solid rgba(250, 250, 250, 0.411);
+}
+
+:is(.contact, .education, .skills, .about, .work_experience, .references) p,
+img,
+.person_01 {
+   padding-left: 16px;
+   padding-top: 3px;
+}
+:is( .about, .work_experience) label,
+.list {
+   margin-left: 30px;
+}
+label {
+   color: #191a19b0;
+   font-weight: 400;
+   text-transform: uppercase;
+   border-bottom: 0.5px solid rgba(250, 250, 250, 0.411);
+   margin-left: 4px;
+}
+.list {
+   list-style: inside;
+}
+.icon {
+   padding-left: 8px;
+   width: 15px;
+   height: 15px;
+   border-radius: 50%;
+}
+
+.td_left {
+   padding-left: 16px;
+}
+
+.td_right {
+   padding-left: 8px;
+}
+
+/* media quire*/
+@media screen and (max-width: 720px) {
+   body {
+      background: linear-gradient(to left top, #f0a3e480, #787ff5a8);
+      animation: animation 5s infinite;
+   }
+
+   .container {
+      width: 400px;
+   }
+
+   .container-main {
+      display: grid;
+      grid-template-columns: 1fr;
+      width: 400px;
+      margin: 4px 0 4px 0;
+   }
+
+   .left_container {
+      margin: 0;
+   }
+
+   .right_container {
+      margin: 0;
+      border-left: 1px solid rgba(255, 255, 255, 0.637);
+      border-right: 1px solid rgba(255, 255, 255, 0.637);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.637);
+      box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.246),
+         inset 4px 4px 16px rgba(0, 0, 0, 0.376);
+      background: linear-gradient(to right top, #b8dbe2, #b47dcc);
+   }
+
+   .profile {
+   }
+
+   .name {
+      position: absolute;
+      padding-top: 1px;
+      margin-top: -47px;
+   }
+
+   .name:hover {
+      animation: animation 5s infinite;
+   }
+
+   @keyframes animation {
+      0% {
+         background-color: #ff0000;
+      }
+
+      8.333% {
+         background-color: #ff8000;
+      }
+
+      16.667% {
+         background-color: #ffff00;
+      }
+
+      25.000% {
+         background-color: #80ff00;
+      }
+
+      33.333% {
+         background-color: #00ff00;
+      }
+
+      41.667% {
+         background-color: #00ff80;
+      }
+
+      50.000% {
+         background-color: #00ffff;
+      }
+
+      58.333% {
+         background-color: #0080ff;
+      }
+
+      66.667% {
+         background-color: #0000ff;
+      }
+
+      75.000% {
+         background-color: #8000ff;
+      }
+
+      83.333% {
+         background-color: #ff00ff;
+      }
+
+      91.667% {
+         background-color: #ff0080;
+      }
+
+      100.00% {
+         background-color: #ff0000;
+      }
+   }
+}
