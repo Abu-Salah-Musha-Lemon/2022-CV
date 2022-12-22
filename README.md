@@ -2,5 +2,5 @@
 try to something new.
 
 This page is perfect for Mobile Devic. 
-live preview url:
+Live preview url: https://abu-salah-musha-lemon.github.io/2022-CV/
     
